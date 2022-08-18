@@ -27,7 +27,7 @@ function setup() {
      isStatic: true
    };
   
-   btn2 = createImg('up.png');
+  btn2 = createImg('up.png');
   btn2.position(350,30);
   btn2.size(50,50);
   btn2.mouseClicked(vForce);
@@ -63,13 +63,15 @@ function draw()
   ground4.show();
   ground5.show();
   Matter.Body.rotate(ground1,angle)
- push();
+  
+  //obs: deixar a rotação apenas com a classe
+  /*push();
   translate(ground1.position.x,ground1.position.y);
   rotate(angle);
   rect(0,0,100,20);
   pop();
   
-  angle +=0.1;
+  angle +=0.1;*/
 
  
 
